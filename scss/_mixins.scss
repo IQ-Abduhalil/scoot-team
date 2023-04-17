@@ -1,0 +1,27 @@
+@use "./variables";
+
+@mixin get-btn($bg-color: false, $color: false) {
+  padding: 14px 44px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  border: none;
+  cursor: pointer;
+
+  @if $bg-color {
+    background-color: $bg-color;
+  } @else {
+    background-color: variables.$primary-yellow;
+  }
+
+  @if $color {
+    color: $color;
+  } @else {
+    color: variables.$white;
+  }
+}
