@@ -393,4 +393,106 @@ ul {
   margin: 0 auto;
 }
 
+.one {
+  background-image: url(../../images/one-bg1.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  margin-bottom: 160px;
+  position: relative;
+}
+.one__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.one__title {
+  color: #495567;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  max-width: 445px;
+  margin-bottom: 24px;
+}
+.one__text {
+  color: #939caa;
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  max-width: 445px;
+  margin-bottom: 40px;
+}
+.one__btn {
+  padding: 14px 44px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  border: none;
+  cursor: pointer;
+  border: 3px solid #fcb72b;
+  background-color: #fcb72b;
+  color: #fff;
+}
+.one__btn:hover {
+  padding: 14px 44px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  border: none;
+  cursor: pointer;
+  border: 3px solid #fcb72b;
+  background-color: #fff;
+  color: #fcb72b;
+}
+.one__img {
+  margin-top: -140px;
+  margin-left: 795px;
+  margin-right: auto;
+}
+
+.two {
+  background-image: url(../../images/two-bg.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  margin-bottom: 140px;
+}
+.two__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.two__img {
+  position: sticky;
+  z-index: 2;
+  margin-left: 0;
+  margin-right: auto;
+  margin-bottom: -150px;
+}
+
+.three {
+  background-image: url(../../images/one-bg1.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  margin-bottom: 180px;
+}
+.three__img {
+  position: sticky;
+  margin-bottom: -220px;
+  margin-left: 1160px;
+  margin-right: 0px;
+}
+
 /*# sourceMappingURL=main.css.map */
