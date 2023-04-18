@@ -1,35 +1,48 @@
 @use "../mixins";
+@use "../variables";
 
-.header{
-    margin: 34px 0 34px 0;
-    &__wrapper{
-        gap: 58px;
-        align-items: center;
-        display: flex;
-        justify-content: space-between;
-    }
-    &__list{
-        display: flex;
-        gap: 32px;
-    }
-    &__link{
-        font-weight: 700;
-        font-size: 15px;
-        line-height: 25px;
-        color: #939CAA;
-        transition: .3s;
-    }
-    &__link:hover{
-            color: #FCB72B;
-        }
-    &__btn{
-        @include mixins.get-btn();
-    }
-    &__btn--link{
-        font-weight: 700;
-        font-size: 15px;
-        line-height: 25px;
-        text-align: center;
-        color: #FFFFFF;
-    }
+.header {
+  margin: 34px 0 34px 0;
+  &__wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    gap: 58px;
+  }
+  &__list {
+    display: flex;
+    gap: 32px;
+  }
+  &__link {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    color: #939caa;
+    transition: 0.3s;
+  }
+  &__link:hover {
+    color: #fcb72b;
+  }
+  &__btn {
+    @include mixins.get-btn();
+  }
+
+  &__btn:hover {
+    @include mixins.get-btn(
+      $bg-color: variables.$white,
+      $color: variables.$primary-yellow
+    );
+  }
+  &__btn--link {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #ffffff;
+  }
 }
