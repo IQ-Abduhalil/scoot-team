@@ -491,7 +491,7 @@ main {
   background-image: url(../../images/one-bg1.png);
   background-repeat: no-repeat;
   background-position: right center;
-  margin-bottom: 180px;
+  margin-bottom: 200px;
 }
 .three__img {
   position: sticky;
@@ -557,6 +557,56 @@ main {
   font-size: 15px;
   line-height: 25px;
   color: #939caa;
+}
+
+.sign {
+  background-image: url(./../../images/sign-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+.sign__container {
+  padding-top: 102px;
+  padding-bottom: 102px;
+}
+.sign__wrapper {
+  display: flex;
+  flex-direction: falce;
+  align-items: center;
+  flex-direction: falce;
+  align-items: center;
+  justify-content: space-between;
+}
+.sign__heading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: #fff;
+  max-width: 415px;
+}
+.sign__targets__list {
+  display: flex;
+  flex-direction: falce;
+  align-items: center;
+  flex-direction: falce;
+  align-items: center;
+  gap: 18px;
+}
+.sign__targets__item {
+  width: 170px;
+  height: 56px;
+}
+.sign__target__link {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.sign__target__img {
+  width: 100%;
+  height: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */
