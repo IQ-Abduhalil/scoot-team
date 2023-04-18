@@ -1,0 +1,41 @@
+@use "../mixins";
+
+.first{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
+    background-image: url(../../images/bgsection.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    &__box{
+        padding: 153px 0 165px;
+        width: 480px;
+    }
+    &__title{
+        margin-bottom: 40px;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 56px;
+        letter-spacing: -2.5px;
+        color: #FFFFFF;
+    }
+    &__text{
+        margin: 0 0 40px 95px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        color: #FFFFFF;
+    }
+    &__btn{
+        margin-left: 95px;
+        @include mixins.get-btn();
+    }
+    &__link{
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+}
