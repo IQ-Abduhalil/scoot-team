@@ -13,16 +13,34 @@
   border: none;
   cursor: pointer;
   border: 3px solid variables.$primary-yellow;
-
+  
   @if $bg-color {
     background-color: $bg-color;
   } @else {
     background-color: variables.$primary-yellow;
   }
-
+  
   @if $color {
     color: $color;
   } @else {
     color: variables.$white;
+  }
+}
+
+@mixin flexbox($direction:falce ,$align:falce) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  
+  @if $direction {
+    flex-direction: $direction;
+  } @else {
+    flex-direction: row;
+  }
+  
+  @if $align {
+    align-items: $align;
+  } @else{
+    align-items: flex-start;
   }
 }
