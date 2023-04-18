@@ -1,0 +1,35 @@
+@use "../mixins";
+
+.header{
+    margin: 34px 0 34px 0;
+    &__wrapper{
+        gap: 58px;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__list{
+        display: flex;
+        gap: 32px;
+    }
+    &__link{
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 25px;
+        color: #939CAA;
+        transition: .3s;
+    }
+    &__link:hover{
+            color: #FCB72B;
+        }
+    &__btn{
+        @include mixins.get-btn();
+    }
+    &__btn--link{
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+}
