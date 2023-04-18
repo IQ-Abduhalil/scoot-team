@@ -1,0 +1,68 @@
+@use './../mixins';
+@use './../variables';
+
+// steps
+.steps{
+    margin-top: 160px;
+    margin-bottom: 160px;
+    overflow: hidden;
+    
+    &__list{
+        @include mixins.flexbox();
+        justify-content: space-between;
+    }
+    
+    &__item{
+        max-width: 350px;
+    }
+    
+    &__img-box{
+        width: 96px;
+        height: 96px;
+        position: relative;
+        margin-bottom: 40px;
+        
+        &::before{
+            content: '';
+            display: inline-block;
+            position: absolute;
+            width: 340px;
+            height: 1px;
+            background-color:variables.$primary-ligh-gray;
+            border: 10px solid #E5ECF4;
+            z-index: -1;
+            right: 50%;
+            top: 42%;
+        }
+    }
+    
+    &__img-box--primary{
+        &::before{
+            width: 252px;
+        }
+    }
+    
+    &__icon{
+        width: 100%;
+        height: 100%;
+    }
+    
+    &__heading{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: -1.07143px;
+        color: variables.$primary-dark;
+        margin-bottom: 27px;
+    }
+    
+    &__text{
+        font-family: 'Lexend Deca',sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        color:variables.$primary-gray;
+    }
+}
