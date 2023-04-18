@@ -377,6 +377,10 @@ ul, ol, li {
   list-style-type: none;
 }
 
+main {
+  overflow: hidden;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
