@@ -402,10 +402,14 @@ main {
   margin: 34px 0 34px 0;
 }
 .header__wrapper {
-  gap: 58px;
   align-items: center;
   display: flex;
   justify-content: space-between;
+}
+.header__box {
+  display: flex;
+  align-items: center;
+  gap: 58px;
 }
 .header__list {
   display: flex;
@@ -415,11 +419,11 @@ main {
   font-weight: 700;
   font-size: 15px;
   line-height: 25px;
-  color: #939CAA;
+  color: #939caa;
   transition: 0.3s;
 }
 .header__link:hover {
-  color: #FCB72B;
+  color: #fcb72b;
 }
 .header__btn {
   padding: 14px 44px;
@@ -437,26 +441,37 @@ main {
   background-color: #fcb72b;
   color: #fff;
 }
+.header__btn:hover {
+  padding: 14px 44px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  border: none;
+  cursor: pointer;
+  border: 3px solid #fcb72b;
+  background-color: #fff;
+  color: #fcb72b;
+}
 .header__btn--link {
   font-weight: 700;
   font-size: 15px;
   line-height: 25px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .first {
-  max-width: 1440px;
   margin: 0 auto;
-  padding: 0 15px;
   position: relative;
-  background-image: url(../../images/bgsection.png);
+  background-image: url(../../images/intro-bg.png);
   background-size: 100%;
   background-repeat: no-repeat;
-}
-.first__box {
   padding: 153px 0 165px;
-  width: 480px;
 }
 .first__title {
   margin-bottom: 40px;
@@ -464,14 +479,25 @@ main {
   font-size: 56px;
   line-height: 56px;
   letter-spacing: -2.5px;
-  color: #FFFFFF;
+  color: #ffffff;
+  max-width: 500px;
+}
+.first__middle {
+  display: flex;
+  margin-left: -205px;
+  align-items: center;
 }
 .first__text {
+  max-width: 405px;
   margin: 0 0 40px 95px;
   font-weight: 400;
   font-size: 15px;
   line-height: 25px;
-  color: #FFFFFF;
+  color: #ffffff;
+}
+.first__next {
+  margin-top: 133px;
+  margin-left: 40px;
 }
 .first__btn {
   margin-left: 95px;
@@ -490,12 +516,28 @@ main {
   background-color: #fcb72b;
   color: #fff;
 }
+.first__btn:hover {
+  padding: 14px 44px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  border: none;
+  cursor: pointer;
+  border: 3px solid #fcb72b;
+  background-color: #fff;
+  color: #fcb72b;
+}
 .first__link {
   font-weight: 700;
   font-size: 15px;
   line-height: 25px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .one {
